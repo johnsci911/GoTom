@@ -1,5 +1,12 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import { SafeAreaView, StyleSheet, Text, View, Platform, StatusBar } from "react-native";
+import {
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
+  Platform,
+  StatusBar,
+} from "react-native";
 
 const isAndroid = Platform.OS === "android";
 
@@ -26,11 +33,11 @@ const styles = StyleSheet.create({
   },
   search: {
     padding: 16,
-    backgroundColor: "green"
+    backgroundColor: "green",
   },
   list: {
     flex: 1,
     padding: 16,
-    backgroundColor: "gray"
-  }
+    backgroundColor: "gray",
+  },
 });
