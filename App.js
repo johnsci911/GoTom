@@ -18,7 +18,7 @@ export default function App() {
           <Text>Search</Text>
         </View>
         <View style={styles.list}>
-          <Text>Search</Text>
+          <Text>List</Text>
         </View>
       </SafeAreaView>
       <ExpoStatusBar style="auto" />
