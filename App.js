@@ -25,12 +25,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   search: {
-    padding: 16, 
+    padding: 16,
     backgroundColor: "green"
   },
   list: {
     flex: 1,
-    padding: 16, 
-    backgroundColor: "blue"
+    padding: 16,
+    backgroundColor: "gray"
   }
 });
