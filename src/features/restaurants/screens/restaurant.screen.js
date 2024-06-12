@@ -1,19 +1,18 @@
 import { Searchbar } from "react-native-paper";
 import styled from "styled-components/native";
-import { SafeAreaView, StyleSheet, Platform, StatusBar } from "react-native";
+import { View,  SafeAreaView, Platform, StatusBar } from "react-native";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 
 const isAndroid = Platform.OS === "android";
 
-const Search = styled.View`
+const Search = styled(View)`
   padding: 16px;
   background-color: "white";
 `;
 
-const List = styled.View`
+const List = styled(View)`
   flex: 1;
   padding: 16px;
-  background-color: "white";
 `;
 
 const SafeArea = styled(SafeAreaView)`
