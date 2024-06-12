@@ -6,13 +6,13 @@ import { RestaurantInfoCard } from "../components/restaurant-info-card.component
 const isAndroid = Platform.OS === "android";
 
 const Search = styled(View)`
-  padding: 16px;
-  background-color: "white";
+  padding: ${(props) => props.theme.sizes[1]};
+  background-color: ${(props) => props.theme.colors.bg.secondary};
 `;
 
 const List = styled(View)`
   flex: 1;
-  padding: 16px;
+  padding: ${(props) => props.theme.sizes[1]};
 `;
 
 const SafeArea = styled(SafeAreaView)`
