@@ -20,7 +20,7 @@ const SafeArea = styled(SafeAreaView)`
   margin-top: ${isAndroid ? StatusBar.currentHeight : 0}px;
 `;
 
-export const RestaurantScreen = () => {
+export const RestaurantsScreen = () => {
   return (
     <SafeArea>
       <Search>
