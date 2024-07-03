@@ -27,6 +27,21 @@ const Settings = () => {
   </SafeArea>;
 };
 
+const TAB_ICON = {
+  Restaurants: "restaurant",
+  Map: "map",
+  Settings: "settings",
+};
+
+const createScreenOptions = ({ route }) => {
+  const iconName = TAB_ICON[route.name];
+  return {
+    tabBarIcon: ({ size, color, focused }) => (
+      <Ionicons name={focused ? iconName : iconName + '-outline'} size={size} color={color} />
+    ),
+  };
+};
+
 export default function App() {
   let [oswaldLoaded] = useOswald({
     Oswald_400Regular,
@@ -45,30 +60,7 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <NavigationContainer>
           <Tab.Navigator
-            screenOptions={({ route }) => ({
-              headerShown: false,
-              tabBarIcon: ({ focused, color, size }) => {
-                let iconName;
-
-                switch (route.name) {
-                  case "Restaurants":
-                    iconName = focused ? "restaurant" : "restaurant-outline";
-                    break;
-                  case "Settings":
-                    iconName = focused ? "settings" : "settings-outline";
-                    break;
-                  case "Map":
-                    iconName = focused ? "map" : "map-outline";
-                    break;
-                  default:
-                    break;
-                }
-                // You can return any component that you like here!
-                return <Ionicons name={iconName} size={size} color={color} />;
-              },
-              tabBarActiveTintColor: "black",
-              tabBarInactiveTintColor: "gray",
-            })}
+            screenOptions={createScreenOptions}
           >
             <Tab.Screen
               name="Restaurants"
