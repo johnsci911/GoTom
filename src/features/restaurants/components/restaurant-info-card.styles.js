@@ -4,8 +4,8 @@ import { Card } from "react-native-paper";
 import { Text } from '../../../components/typography/text.component';
 
 export const Icon = styled(Image)`
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 `;
 
 export const RestaurantCard = styled(Card)`

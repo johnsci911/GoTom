@@ -45,7 +45,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
               <Text variant="error">Closed Temporarily</Text>
             )}
             <Spacer position="left" size="large">
-              {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
+              {isOpenNow && <SvgXml xml={open} width={15} height={15} />}
             </Spacer>
             <Icon source={{ uri: icon }} />
           </SectionEnd>
