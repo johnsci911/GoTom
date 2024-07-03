@@ -36,6 +36,7 @@ const TAB_ICON = {
 const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
   return {
+    headerShown: false,
     tabBarIcon: ({ size, color, focused }) => (
       <Ionicons name={focused ? iconName : iconName + '-outline'} size={size} color={color} />
     ),
