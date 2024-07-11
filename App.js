@@ -38,7 +38,7 @@ const createScreenOptions = ({ route }) => {
   return {
     headerShown: false,
     tabBarIcon: ({ size, color, focused }) => (
-      <Ionicons name={focused ? iconName : iconName + '-outline'} size={size} color={color} />
+      <Ionicons name={focused ? iconName : iconName + "-outline"} size={size} color={color} />
     ),
   };
 };
