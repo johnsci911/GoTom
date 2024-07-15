@@ -1,7 +1,7 @@
 import { Image, View } from "react-native";
 import styled from "styled-components/native";
 import { Card } from "react-native-paper";
-import { Text } from '../../../components/typography/text.component';
+import { Text } from "../../../components/typography/text.component";
 
 export const Icon = styled(Image)`
   width: 15px;
